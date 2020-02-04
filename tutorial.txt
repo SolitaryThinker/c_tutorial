@@ -5,3 +5,65 @@ use ssh url to clone your repository.
 add files using git add
 
 git commit -m "tutorial file"
+
+
+make new changes
+
+
+=============
+C
+
+
+void main() {
+    int x = 5;
+    struct mystruct;
+
+    int *y; //pointer to integer
+
+
+    &x; // int *   pointer to int
+    &y; // int **  pointer to pointer to int
+
+    *y; // derefenerce/value at int
+
+    y = &x;
+
+    print *y; // 5
+
+    &y; // int **
+    *(&y); // int *;
+    **(&y); // int *;
+
+    **(&y); // int
+
+
+    // pointer arithmetic
+
+    char c; // 1 byte
+
+    int a; // 4 bytes
+
+    int *p = &a;
+
+    print p; 0x05
+
+    p++; // + 1 *(sizeof(int)
+    // p = p + n
+    // p + (n) * (sizeof(*p))
+    print p; 0x09
+
+
+    {
+        int a;
+        int **p = &&a;
+
+        print p; //0x05
+
+        p++; //
+        print p; // d
+    }
+
+
+
+}
+
